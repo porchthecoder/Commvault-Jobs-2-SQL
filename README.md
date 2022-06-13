@@ -1,7 +1,7 @@
 # Commvault-Jobs-2-SQL
 
 # Description
-Python script to insert Commvault backup job data into an SQL database as a source for Grafana. 
+Quick and dirty Python script to insert Commvault backup job data into an SQL database as a source for Grafana. 
 
 Commvault does not provide a good way to track client/subclient backup growth over time. By logging the backup data size to an SQL database, backup client size can be graphed in Grafana. This can be used to quickly identify backup job growth in a per client/subclient level. Be it a small growth over a year, or a sudden 5TB of data added at once. 
 
