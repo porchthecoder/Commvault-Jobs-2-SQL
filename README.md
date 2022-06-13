@@ -38,3 +38,7 @@ ORDER BY $__timeGroup(timestamp,$__interval)
 ![Commvault-SQL1](https://user-images.githubusercontent.com/107140997/173424146-2b77b8b4-5184-42ee-9bff-dce543e2ab51.png)
 ![Commvault-SQL2](https://user-images.githubusercontent.com/107140997/173424160-143619ef-eda7-46fd-a7ab-35573a74cedc.png)
 
+# Install
+See the python script for details. It needs account access to the Commvault Webserver. This is not the Commvault Console unless you installed the Webserver component on the Commvault Console server. It also needs access to a MySQL/Maria SQL server. Create a database and load in the sql file to create the table. Assuming everything is correct, run the python script. It should access the Commvault API and update the SQL database. 
+Connect your Grafana install to the SQL database and graph away. See the json files for example panels. For best result, set the time picker for 30 days or more. 
+
